@@ -36,5 +36,5 @@ node_modules
 !runWPbackup.php
 !robots.txt
 # Theme
-!/wp-content/themes
+!wp-content/themes/
 # Plugins
