@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "baseUrl": "./",
+    "paths": {
+      "~/components/*": [
+        "blocks/components/*"
+      ],
+      "~/hooks/*": [
+        "blocks/hooks/*"
+      ],
+      "~/reusable-blocks/*": [
+        "blocks/reusable-blocks/*"
+      ]
+    }
+  },
+  "include": [
+    "./**/*",
+    "assets/lib/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

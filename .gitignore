@@ -1,7 +1,6 @@
 ### ignore all WordPress folders ###
 /wp-admin
 /wp-includes
-/wp-content
 
 ### ignore all files in root ###
 /*.*
@@ -36,5 +35,5 @@ node_modules
 !runWPbackup.php
 !robots.txt
 # Theme
-!wp-content/themes/
+!/wp-content/themes/rgcerte
 # Plugins

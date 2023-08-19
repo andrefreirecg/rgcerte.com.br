@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "version": "1.0.0",
+  "name": "makersolucoes/post",
+  "title": "Post list",
+  "description": "Exibe lista de post",
+  "keywords": [
+    "post"
+  ],
+  "attributes": {
+    "preview": {
+      "type": "boolean",
+      "default": false
+    },
+    "checked": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "providesContext": {
+    "contextLabelChecked": "checked"
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "boilerplate",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

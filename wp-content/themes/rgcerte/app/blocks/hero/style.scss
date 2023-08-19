@@ -1,0 +1,12 @@
+@import "../../variables";
+
+.Hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: $container;
+
+  & h1 {
+    color: $dark-gray;
+  }
+}
