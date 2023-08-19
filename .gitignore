@@ -1,6 +1,7 @@
 ### ignore all WordPress folders ###
 /wp-admin
 /wp-includes
+/wp-content
 
 ### ignore all files in root ###
 /*.*
