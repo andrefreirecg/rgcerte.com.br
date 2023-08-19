@@ -2,6 +2,7 @@
 /wp-admin
 /wp-includes
 /wp-content
+/wp-content/*
 
 ### ignore all files in root ###
 /*.*
