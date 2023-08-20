@@ -15,14 +15,14 @@ class EnqueueScripts
 
     public function wpEnqueueScript($args): void
     {
-        $path = $args['path'] ?? get_stylesheet_directory_uri();
+        $path = $args['path'] ?? get_stylesheet_directory();
         $path .= $args['filePath'];
         wp_enqueue_script($args['handle'], $path, $args['dep'], filemtime($path), $args['inFooter']);
     }
 
     public function wpEnqueueStyle($args): void
     {
-        $path = $args['path'] ?? get_stylesheet_directory_uri();
+        $path = $args['path'] ?? get_stylesheet_directory();
         $path .= $args['filePath'];
         $version = $args['version'] ?? filemtime($path);
         wp_enqueue_style($args['handle'], $path, $args['dep'], $version);
