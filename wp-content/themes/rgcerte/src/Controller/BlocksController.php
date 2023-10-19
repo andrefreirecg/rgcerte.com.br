@@ -16,8 +16,8 @@ class BlocksController
 	public function addCategoryBlocksGutenberg($blockCategories)
 	{
 		array_unshift($blockCategories, [
-				'slug'  => 'name_project',
-				'title' => __('Blocos APIKI', 'boilerplate'),
+				'slug'  => 'ms_blocks',
+				'title' => __('MS Blocks', 'rgcerte'),
 				'icon'  => null,
 			]
 		);

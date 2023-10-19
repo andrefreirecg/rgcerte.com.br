@@ -1,0 +1,23 @@
+@import "../../../variables";
+
+.ms-divider {
+    background-color: #fff;
+    position: relative;
+    margin: 15px 0;
+    display: inline-flex;
+    min-height: 5px;
+    min-width: 10px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+
+    &::before {
+        background-color: #fff;
+    }
+
+    &::after {
+        max-width: 30%;
+        position: absolute;
+        background-color: black;
+    }
+}

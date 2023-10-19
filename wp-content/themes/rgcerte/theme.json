@@ -58,9 +58,103 @@
     "typography": {
       "fontFamilies": [
         {
-          "fontFamily": "\"Roboto\", sans-serif",
-          "slug": "roboto",
-          "name": "Roboto"
+          "fontFamily": "\"Montserrat\", sans-serif",
+          "slug": "montserrat",
+          "name": "Montserrat",
+          "fontFace": [
+            {
+              "fontFamily": "Montserrat",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/Montserrat/static/Montserrat-Medium.ttf"]
+            },
+            {
+              "fontFamily": "Montserrat",
+              "fontWeight": "400",
+              "fontStyle": "italic",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/Montserrat/static/Montserrat-MediumItalic.ttf"]
+            },
+           
+            {
+              "fontFamily": "Montserrat",
+              "fontWeight": "900",
+              "fontStyle": "bold",
+              "fontStretch": "normal",
+              "src": ["https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap"]
+            }
+          ]
+        },
+        {
+          "fontFamily": "\"Nunito\", sans-serif",
+          "slug": "nunito",
+          "name": "Nunito",
+          "fontFace": [
+            {
+              "fontFamily": "Nunito",
+              "fontWeight": "300",
+              "fontStyle": "lighter",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/Nunito/static/Nunito-Thin.ttf"]
+            },
+            {
+              "fontFamily": "Nunito",
+              "fontWeight": "300",
+              "fontStyle": "lighter",
+              "fontStretch": "italic",
+              "src": ["file:./assets/fonts/Nunito/static/Nunito-ThinItalic.ttf"]
+            },
+            {
+              "fontFamily": "Nunito",
+              "fontWeight": "400",
+              "fontStyle": "bold",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/Nunito/static/Nunito-SemiBold.ttf"]
+            },
+            {
+              "fontFamily": "Nunito",
+              "fontWeight": "400",
+              "fontStyle": "bold",
+              "fontStretch": "italic",
+              "src": ["file:./assets/fonts/Nunito/static/Nunito-SemiBoldItalic.ttf"]
+            },
+            {
+              "fontFamily": "Nunito",
+              "fontWeight": "900",
+              "fontStyle": "bolder",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/Nunito/static/Nunito-Black.ttf"]
+            },
+            {
+              "fontFamily": "Nunito",
+              "fontWeight": "900",
+              "fontStyle": "bolder",
+              "fontStretch": "italic",
+              "src": ["file:./assets/fonts/Nunito/static/Nunito-BlackItalic.ttf"]
+            },
+            {
+              "fontFamily": "Nunito",
+              "fontWeight": "600",
+              "fontStyle": "bold",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/Nunito/static/Nunito-ExtraBold.ttf"]
+            },
+            {
+              "fontFamily": "Nunito",
+              "fontWeight": "500",
+              "fontStyle": "bold",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/Nunito/static/Nunito-Bold.ttf"]
+            },
+            {
+              "fontFamily": "Nunito",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/Nunito/static/Nunito-Regular.ttf"]
+            }
+          ]
         }
       ],
       "fontSizes": [
@@ -102,54 +196,29 @@
       "customDuotone": false,
       "palette": [
         {
-          "name": "Roxo",
-          "slug": "purple",
-          "color": "#6f42c1"
+          "name": "Verde Escuro",
+          "slug": "green-hard",
+          "color": "#059654"
         },
         {
-          "name": "Violeta",
-          "slug": "violet",
-          "color": "#a600ff"
+          "name": "Verde Médio",
+          "slug": "green-medium",
+          "color": "#089857"
         },
         {
-          "name": "Vermelho",
-          "slug": "red",
-          "color": "#ff0000"
+          "name": "Verde Claro",
+          "slug": "green-light",
+          "color": "#A6D370"
         },
         {
-          "name": "Amarelo",
-          "slug": "yellow",
-          "color": "#f0b90b"
-        },
-        {
-          "name": "Azul",
-          "slug": "blue",
-          "color": "#007bff"
-        },
-        {
-          "name": "Ciano",
-          "slug": "cyan",
-          "color": "#17a2b8"
-        },
-        {
-          "name": "Verde",
-          "slug": "green",
-          "color": "#28a745"
+          "name": "Branco",
+          "slug": "whit",
+          "color": "#ffffff"
         },
         {
           "name": "Preto",
           "slug": "black",
           "color": "#000000"
-        },
-        {
-          "name": "Cinza",
-          "slug": "gray",
-          "color": "#504E4E"
-        },
-        {
-          "name": "Branco",
-          "slug": "white",
-          "color": "#ffffff"
         }
       ]
     }
@@ -158,7 +227,8 @@
     "elements": {
       "link": {
         "typography": {
-          "textDecoration": "none"
+          "textDecoration": "none",
+          "fontFamily": "nunito"
         }
       }
     },

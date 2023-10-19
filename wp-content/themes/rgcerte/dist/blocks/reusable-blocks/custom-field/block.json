@@ -1,0 +1,58 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "version": "1.0.0",
+  "name": "makersolucoes/custom-field",
+  "title": "Campo personalizado",
+  "category": "ms_blocks",
+  "description": "Exibe um campo personalizado",
+  "icon": "minus",
+  "keywords": [
+    "icon"
+  ],
+  "attributes": {
+    "key": {
+      "type": "string",
+      "default": ""
+    },
+    "align": {
+      "type": "string",
+      "default": "center"
+    }
+  },
+  "providesContext": {
+    "contextLabelChecked": "checked"
+  },
+  "supports": {
+    "html": true,
+    "alignWide": true,
+    "className": true,
+    "align": true,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "typography": {
+      "lineHeight": true,
+      "fontSize": true,
+      "__experimentalFontFamily": true
+    },
+    "__experimentalFontFamily": true,
+    "layout": {
+      "allowEditing": true
+    },
+    "font": true,
+    "fontFamilies": true,
+    "fontSize": true,
+    "color": {
+      "text": true,
+      "background": true,
+      "gradients": true
+    }
+  },
+  "textdomain": "boilerplate",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

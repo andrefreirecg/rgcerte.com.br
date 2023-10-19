@@ -1,0 +1,27 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/@wordpress/scripts/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./app/blocks/reusable-blocks/divider/style.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************/
+/* Colors */
+/* Fonts */
+/* Breakpoint */
+.ms-divider {
+  background-color: #fff;
+  position: relative;
+  margin: 15px 0;
+  display: inline-flex;
+  min-height: 5px;
+  min-width: 10px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+.ms-divider::before {
+  background-color: #fff;
+}
+.ms-divider::after {
+  max-width: 30%;
+  position: absolute;
+  background-color: black;
+}
+
+/*# sourceMappingURL=style-index.css.map*/
