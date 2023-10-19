@@ -1,0 +1,21 @@
+@import "../../../variables";
+
+.Hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+
+
+  & h1 {
+    color: $dark-gray;
+  }
+  .wp-block-image{
+      display: flex;
+      justify-content: center;
+      margin: 0;
+  }
+  &-columns{
+    margin: 0;
+  }
+}

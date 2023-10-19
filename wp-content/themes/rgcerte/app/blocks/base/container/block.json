@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "name": "makersolucoes/container",
   "title": "Container",
+  "icon": "align-center",
   "description": "Este componente de container!",
   "keywords": [
     "container",
@@ -26,6 +27,10 @@
       "text": true,
       "background": true,
       "gradients": true
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true
     },
     "__experimentalBorder": {
       "color": true,

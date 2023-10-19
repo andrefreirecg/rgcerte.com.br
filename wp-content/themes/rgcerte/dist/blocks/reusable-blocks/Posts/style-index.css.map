@@ -1,0 +1,1 @@
+{"version":3,"file":"reusable-blocks/Posts/style-index.css","mappings":";;;AAAA;EACE;EACA;EACA;AACF,C","sources":["webpack://rgcerte/./app/blocks/reusable-blocks/Posts/style.scss"],"sourcesContent":[".Hero {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n"],"names":[],"sourceRoot":""}

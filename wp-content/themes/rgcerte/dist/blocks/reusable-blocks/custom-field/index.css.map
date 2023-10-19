@@ -1,0 +1,1 @@
+{"version":3,"file":"reusable-blocks/custom-field/index.css","mappings":";;;AAEI;EACI;AADR;AAEQ;EACI;AAAZ,C","sources":["webpack://rgcerte/./app/blocks/reusable-blocks/custom-field/edit.scss"],"sourcesContent":[".ms-card-container \n{\n    figure > div {\n        width: 100%;\n        >img {\n            width: 100%;\n        }\n    }\n} \n"],"names":[],"sourceRoot":""}

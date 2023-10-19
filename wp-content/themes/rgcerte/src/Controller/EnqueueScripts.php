@@ -62,18 +62,18 @@ class EnqueueScripts
      */
     public function scriptsAdmin(): void
     {
-        $this->wpEnqueueScript([
-            'handle'   => 'child-theme-front-js',
-            'filePath' => '/dist/admin.js',
-            'dep'      => [],
-            'inFooter' => true
-        ]);
+        // $this->wpEnqueueScript([
+        //     'handle'   => 'child-theme-front-js',
+        //     'filePath' => '/dist/admin.js',
+        //     'dep'      => [],
+        //     'inFooter' => true
+        // ]);
 
-        $this->wpEnqueueStyle([
-            'handle'   => 'child-theme-front-css',
-            'filePath' => '/dist/admin.css',
-            'dep'      => [],
-        ]);
+        // $this->wpEnqueueStyle([
+        //     'handle'   => 'child-theme-front-css',
+        //     'filePath' => '/dist/admin.css',
+        //     'dep'      => [],
+        // ]);
     }
 
     /**

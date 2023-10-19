@@ -1,0 +1,24 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/@wordpress/scripts/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./app/blocks/base/container/style.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************/
+/* Colors */
+/* Fonts */
+/* Breakpoint */
+.ContainerBlocks {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1400px;
+  overflow: hidden;
+}
+.ContainerBlocks .dia-a-dia img {
+  max-height: 300px;
+  min-height: 300px;
+}
+.ContainerBlocks .wp-block-embed-youtube iframe {
+  border-radius: 25px;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

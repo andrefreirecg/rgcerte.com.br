@@ -32,6 +32,58 @@ class ThemeOptionsController
          */
         add_theme_support('title-tag');
 
+
+// Define as labels do custom post type
+$labels = array(
+    'name' => 'Equipe',
+    'slug' => 'equipe',
+    'singular_name' => 'Equipe',
+    'add_new' => 'Adicionar Novo',
+    'add_new_item' => 'Adicionar Novo Membro ',
+    'edit_item' => 'Editar Membro',
+    'new_item' => 'Novo Membro',
+    'view_item' => 'Ver Membro',
+    'search_items' => 'Pesquisar por Membro',
+    'not_found' => 'Nenhum membro encontrado',
+    'not_found_in_trash' => 'Nenhum membro encontrado na lixeira',
+  );
+  
+  // Define as configurações do custom post type
+  $args = array(
+    'labels' => $labels,
+    'show_in_rest' => true,
+    'public' => true,
+    'has_archive' => true,
+    'supports' => array('title', 'editor', 'thumbnail'),
+  );
+  
+  // Registra o custom post type
+  register_post_type('Equipe', $args);
+  $labels = array(
+    'name' => 'Depoimento',
+    'slug' => 'depoimento',
+    'singular_name' => 'Depoimento',
+    'add_new' => 'Adicionar Novo',
+    'add_new_item' => 'Adicionar Novo Depoimento ',
+    'edit_item' => 'Editar Depoimento',
+    'new_item' => 'Novo Depoimento',
+    'view_item' => 'Ver Depoimento',
+    'search_items' => 'Pesquisar por Depoimento',
+    'not_found' => 'Nenhum depoimento encontrado',
+    'not_found_in_trash' => 'Nenhum depoimento encontrado na lixeira',
+  );
+  
+  // Define as configurações do custom post type
+  $args = array(
+    'labels' => $labels,
+    'show_in_rest' => true,
+    'public' => true,
+    'has_archive' => true,
+    'supports' => array('title', 'editor', 'thumbnail'),
+  );
+  register_post_type('Depoimentos', $args);
+ 
+
         /**
          * Add support for Block Styles.
          * https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-support/
