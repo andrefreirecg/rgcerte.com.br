@@ -6,14 +6,57 @@
   justify-content: space-between;
   margin: 0 auto;
 
+  &-container{
+    @media (max-width: $tablet-large) {
+      padding-bottom: 2rem;
+      .wp-block-columns{
+        // flex-direction: column-reverse;
+      }
+    }
+  }
 
   & h1 {
     color: $dark-gray;
+    @media (min-width: $mobile) {
+      font-size: 2.8rem;
+      text-align: center;
+    }
+    @media (min-width: $mobile-large) {
+      font-size: 3.2rem;
+    }
+    @media (min-width: $tablet) {
+      font-size: 4.2rem;
+    }
+    @media (min-width: $tablet-large) {
+      font-size: 3rem;
+      text-align: left;
+    }
+    @media (min-width: $desktop) {
+      font-size: 4rem;
+    }
+    @media (min-width: $desktop-xlarge) {
+      font-size: 4.5rem;
+    }
+    @media (min-width: $desktop-fhd) {
+      font-size: 5rem;
+    }
+  }
+  .wp-block-buttons{
+    @media (max-width: $tablet-large) {
+      justify-content: center !important;
+    }
+    @media (min-width: $tablet) {
+      font-size: 1.1rem;
+    }
   }
   .wp-block-image{
       display: flex;
       justify-content: center;
       margin: 0;
+      @media (max-width: $tablet-large) {
+        max-width: 60%;
+        margin: 0 auto;
+      }
   }
   &-columns{
     margin: 0;
