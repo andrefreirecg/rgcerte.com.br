@@ -9,16 +9,13 @@
   &-container{
     @media (max-width: $tablet-large) {
       padding-bottom: 2rem;
-      .wp-block-columns{
-        // flex-direction: column-reverse;
-      }
     }
   }
 
   & h1 {
     color: $dark-gray;
     @media (min-width: $mobile) {
-      font-size: 2.8rem;
+      font-size: 2.3rem;
       text-align: center;
     }
     @media (min-width: $mobile-large) {

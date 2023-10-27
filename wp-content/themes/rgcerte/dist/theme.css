@@ -1,3 +1,109 @@
+.quem-somos {
+  padding: 0 1rem;
+}
 
+@media (min-width: 480px) {
+  .quem-somos {
+    padding: 0 2rem;
+  }
+}
+
+.quem-somos .wp-block-media-text__content {
+  padding: 0 1rem;
+}
+
+.quem-somos .wp-block-media-text__content > h1, .quem-somos .wp-block-media-text__content h2, .quem-somos .wp-block-media-text__content h3, .quem-somos .wp-block-media-text__content h4, .quem-somos .wp-block-media-text__content h5, .quem-somos .wp-block-media-text__content h6 {
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .quem-somos .wp-block-media-text__content > h1, .quem-somos .wp-block-media-text__content h2, .quem-somos .wp-block-media-text__content h3, .quem-somos .wp-block-media-text__content h4, .quem-somos .wp-block-media-text__content h5, .quem-somos .wp-block-media-text__content h6 {
+    padding: left;
+  }
+}
+
+@media (max-width: 640px) {
+  .quem-somos .wp-block-media-text__content > p {
+    text-align: justify;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .quem-somos .wp-block-media-text__content > p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .quem-somos .wp-block-media-text__content > .wp-block-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 781px) {
+  .quem-somos .wp-block-media-text__content > .wp-block-buttons > .wp-block-button {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .quem-somos .wp-block-media-text__content > .wp-block-buttons > .wp-block-button {
+    font-size: 1.1rem;
+  }
+}
+
+.beneficios {
+  padding: 0 1rem;
+}
+
+@media (min-width: 480px) {
+  .beneficios {
+    padding: 0 2rem;
+  }
+}
+
+.beneficios.wp-block-columns .wp-block-column .ContainerBlocks {
+  padding: 0;
+}
+
+.beneficios.wp-block-columns .wp-block-column .ContainerBlocks h1, .beneficios.wp-block-columns .wp-block-column .ContainerBlocks h2, .beneficios.wp-block-columns .wp-block-column .ContainerBlocks h3, .beneficios.wp-block-columns .wp-block-column .ContainerBlocks h4, .beneficios.wp-block-columns .wp-block-column .ContainerBlocks h5, .beneficios.wp-block-columns .wp-block-column .ContainerBlocks h6 {
+  text-align: left;
+}
+
+@media (max-width: 640px) {
+  .beneficios.wp-block-columns .wp-block-column .ContainerBlocks h1, .beneficios.wp-block-columns .wp-block-column .ContainerBlocks h2, .beneficios.wp-block-columns .wp-block-column .ContainerBlocks h3, .beneficios.wp-block-columns .wp-block-column .ContainerBlocks h4, .beneficios.wp-block-columns .wp-block-column .ContainerBlocks h5, .beneficios.wp-block-columns .wp-block-column .ContainerBlocks h6 {
+    text-align: center;
+  }
+
+  .beneficios.wp-block-columns .wp-block-column .ContainerBlocks p {
+    text-align: justify;
+    font-size: 1.3rem;
+  }
+
+  .beneficios.wp-block-columns .wp-block-column .ContainerBlocks .wp-block-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 781px) {
+  .beneficios.wp-block-columns .wp-block-column .ContainerBlocks .wp-block-buttons > .wp-block-button {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .beneficios.wp-block-columns .wp-block-column .ContainerBlocks .wp-block-buttons > .wp-block-button {
+    font-size: 1.1rem;
+  }
+}
+
+.beneficios.wp-block-columns .dia-a-dia .wp-block-group {
+  justify-content: center;
+}
+
+.beneficios.wp-block-columns .dia-a-dia h2 {
+  text-align: center !important;
+}
 
 /*# sourceMappingURL=theme.css.map */
