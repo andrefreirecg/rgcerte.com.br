@@ -38,4 +38,5 @@ node_modules
 !robots.txt
 # Theme
 !/wp-content/themes/rgcerte
+!/wp-content/themes/rgcerte/*
 # Plugins

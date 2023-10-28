@@ -24,7 +24,7 @@ class EnqueueScripts
     {
         $path = $args['path'] ?? get_stylesheet_directory();
         $path .= $args['filePath'];
-        $version = $args['version'] ?? filemtime($path);
+        $version = $args['version'] ?? filemtime(get_stylesheet_directory());
         wp_enqueue_style($args['handle'], $path, $args['dep'], $version);
     }
 
@@ -89,12 +89,13 @@ class EnqueueScripts
             'dep'      => [],
             'inFooter' => true
         ]);
-
         $this->wpEnqueueStyle([
             'handle'   => 'child-theme-css',
+            'path'     => get_template_directory_uri(),
             'filePath' => '/dist/theme.css',
             'dep'      => [],
         ]);
+
 
         $data = [
             'url_ajax' => admin_url('admin-ajax.php'),

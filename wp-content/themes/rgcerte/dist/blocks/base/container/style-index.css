@@ -20,5 +20,10 @@
 .ContainerBlocks .wp-block-embed-youtube iframe {
   border-radius: 25px;
 }
+@media (max-width: 1280px) {
+  .ContainerBlocks {
+    padding: 0 2rem;
+  }
+}
 
 /*# sourceMappingURL=style-index.css.map*/
