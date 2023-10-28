@@ -20,3 +20,8 @@ jobs:
         server: ${{ secrets.FTP_HOST_HOMOLOG }}
         username: ${{ secrets.FTP_USER_HOMOLOG }}
         password: ${{ secrets.FTP_PASS_HOMOLOG }}
+    - name: 🚀 Install dependencies
+      uses: ramsey/composer-install@v1
+      with:
+        php-version: '7.4'
+
