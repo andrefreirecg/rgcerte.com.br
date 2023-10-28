@@ -100,10 +100,100 @@
         .dia-a-dia{
             .wp-block-group{
                 justify-content: center;
+                @media (max-width: $mobile-large) {
+                    flex-direction: column;
+                }
             }
                 h2{
                     text-align: center !important;
                 }
+        }
+    }
+}
+.colaboradores{
+    .wp-block-cover{
+        .wp-block-cover__inner-container{
+            .ContainerBlocks{
+                padding: 0;
+            }
+        }
+    }
+    .wp-block-query{
+        ul{
+            @media (max-width: $tablet-large) {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+            @media (max-width: $mobile-large) {
+                grid-template-columns: repeat(1, minmax(0, 1fr));
+            }
+            li{
+                .wp-block-makersolucoes-card{
+                    @media (max-width: $tablet-large) {
+                        padding: 0 !important;
+                        .ContainerBlocks{
+                            border-top-left-radius: 60px !important;
+                            border-bottom-right-radius: 60px !important;
+                            figure{
+                                img{
+                                    border-radius: 0 !important;
+                                }
+                            }
+                        }
+                    }
+
+                    .ContainerBlocks{
+                        padding: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+}
+.certificar{
+    >.wp-block-column{
+        >.ContainerBlocks{
+            @media (max-width: $mobile-large) {
+                padding: 0 0.8rem !important;
+            }
+            h2{
+                @media (max-width: $mobile-large) {
+                    font-size: 1.8rem !important;
+                    text-align: center;
+                }
+            }
+            p{
+                @media (max-width: $tablet) {
+                    font-size: 1.3rem;
+                    text-align: justify;
+                    padding: 0;
+                }
+            }
+            .wp-block-columns{
+                .wp-block-column{
+                    justify-content: center;
+                    display: flex;
+                    .wp-block-makersolucoes-card{
+                        @media (max-width: $desktop-large) {
+                            padding: 0 !important;
+                            .ContainerBlocks{
+                                border-top-left-radius: 60px !important;
+                                border-bottom-right-radius: 60px !important;
+                                figure{
+                                    max-width: 100%;
+                                    img{
+                                        width: 100%;
+                                        border-radius: 0 !important;
+                                    }
+                                }
+                            }
+                        }
+    
+                        .ContainerBlocks{
+                            padding: 0 !important;
+                        }
+                    }
+                }
+            }
         }
     }
 }

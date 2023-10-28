@@ -102,8 +102,97 @@
   justify-content: center;
 }
 
+@media (max-width: 480px) {
+  .beneficios.wp-block-columns .dia-a-dia .wp-block-group {
+    flex-direction: column;
+  }
+}
+
 .beneficios.wp-block-columns .dia-a-dia h2 {
   text-align: center !important;
+}
+
+.colaboradores .wp-block-cover .wp-block-cover__inner-container .ContainerBlocks {
+  padding: 0;
+}
+
+@media (max-width: 781px) {
+  .colaboradores .wp-block-query ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .colaboradores .wp-block-query ul {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 781px) {
+  .colaboradores .wp-block-query ul li .wp-block-makersolucoes-card {
+    padding: 0 !important;
+  }
+
+  .colaboradores .wp-block-query ul li .wp-block-makersolucoes-card .ContainerBlocks {
+    border-top-left-radius: 60px !important;
+    border-bottom-right-radius: 60px !important;
+  }
+
+  .colaboradores .wp-block-query ul li .wp-block-makersolucoes-card .ContainerBlocks figure img {
+    border-radius: 0 !important;
+  }
+}
+
+.colaboradores .wp-block-query ul li .wp-block-makersolucoes-card .ContainerBlocks {
+  padding: 0 !important;
+}
+
+@media (max-width: 480px) {
+  .certificar > .wp-block-column > .ContainerBlocks {
+    padding: 0 .8rem !important;
+  }
+
+  .certificar > .wp-block-column > .ContainerBlocks h2 {
+    text-align: center;
+    font-size: 1.8rem !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .certificar > .wp-block-column > .ContainerBlocks p {
+    text-align: justify;
+    padding: 0;
+    font-size: 1.3rem;
+  }
+}
+
+.certificar > .wp-block-column > .ContainerBlocks .wp-block-columns .wp-block-column {
+  justify-content: center;
+  display: flex;
+}
+
+@media (max-width: 1280px) {
+  .certificar > .wp-block-column > .ContainerBlocks .wp-block-columns .wp-block-column .wp-block-makersolucoes-card {
+    padding: 0 !important;
+  }
+
+  .certificar > .wp-block-column > .ContainerBlocks .wp-block-columns .wp-block-column .wp-block-makersolucoes-card .ContainerBlocks {
+    border-top-left-radius: 60px !important;
+    border-bottom-right-radius: 60px !important;
+  }
+
+  .certificar > .wp-block-column > .ContainerBlocks .wp-block-columns .wp-block-column .wp-block-makersolucoes-card .ContainerBlocks figure {
+    max-width: 100%;
+  }
+
+  .certificar > .wp-block-column > .ContainerBlocks .wp-block-columns .wp-block-column .wp-block-makersolucoes-card .ContainerBlocks figure img {
+    width: 100%;
+    border-radius: 0 !important;
+  }
+}
+
+.certificar > .wp-block-column > .ContainerBlocks .wp-block-columns .wp-block-column .wp-block-makersolucoes-card .ContainerBlocks {
+  padding: 0 !important;
 }
 
 /*# sourceMappingURL=theme.css.map */
