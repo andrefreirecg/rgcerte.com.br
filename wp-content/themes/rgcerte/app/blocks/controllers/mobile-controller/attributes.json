@@ -1,0 +1,38 @@
+{
+    "attributes": {
+        "msPaddingMobileTop": {
+            "type": "text",
+            "default": 0
+          },
+          "msPaddingMobileBottom": {
+            "type": "text",
+            "default": 0
+          },
+          "msPaddingMobileLeft": {
+            "type": "text",
+            "default": 0
+          },
+          "msPaddingMobileRight": {
+            "type": "text",
+            "default": 0
+          },
+          "msMarginMobileTop": {
+            "type": "text",
+            "default": 0
+          },
+          "msMarginMobileBottom": {
+            "type": "text",
+            "default": 0
+          },
+          "msMarginMobileLeft": {
+            "type": "text",
+            "default": 0
+          },
+          "msMarginMobileRight": {
+            "type": "text",
+            "default": 0
+          }
+    }
+  
+  }
+  
