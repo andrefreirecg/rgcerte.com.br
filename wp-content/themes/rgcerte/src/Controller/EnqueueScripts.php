@@ -69,11 +69,13 @@ class EnqueueScripts
         //     'inFooter' => true
         // ]);
 
-        // $this->wpEnqueueStyle([
-        //     'handle'   => 'child-theme-front-css',
-        //     'filePath' => '/dist/admin.css',
-        //     'dep'      => [],
-        // ]);
+        $parenthandle = 'parent-style';
+        $this->wpEnqueueStyle([
+            'handle'   => 'child-theme-front-admin-css',
+            'path'     => get_stylesheet_directory_uri(),
+            'filePath' => '/dist/admin.css',
+
+        ]);
     }
 
     /**
