@@ -1,0 +1,72 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "version": "1.0.0",
+  "name": "makersolucoes/slider",
+  "title": "Slider - Corpo",
+  "category": "ms_blocks",
+  "description": "Exibe um componente de Slider",
+  "icon": "minus",
+  "keywords": [
+    "icon"
+  ],
+  "attributes": {
+    "images": {
+      "type": "array",
+      "default": []
+    },
+    "animationDuration": {
+      "type": "number",
+      "default": 400
+    },
+    "animationType": {
+      "type": "string",
+      "default": "slide"
+    },
+    "autoPlay": {
+      "type": "boolean",
+      "default": true
+    },
+    "autoPlayInterval": {
+      "type": "number",
+      "default": 3000
+    },
+    "infinite": {
+      "type": "boolean",
+      "default": true
+    },
+    "responsiveMobile": {
+      "type": "number",
+      "default": 1
+    },
+    "responsiveTablet": {
+      "type": "number",
+      "default": 1
+    },
+    "responsiveDesktop": {
+      "type": "number",
+      "default": 1
+    },
+    "buttonsStyle": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "providesContext": {
+    "contextLabelChecked": "checked"
+  },
+  "supports": {
+    "html": false,
+    "alignWide": true,
+    "color": {
+      "text": false,
+      "background": true,
+      "gradients": true
+    },
+    "width": true
+  },
+  "textdomain": "boilerplate",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

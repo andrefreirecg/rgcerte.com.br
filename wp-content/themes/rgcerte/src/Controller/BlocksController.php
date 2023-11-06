@@ -15,7 +15,9 @@ class BlocksController
 
 	public function addCategoryBlocksGutenberg($blockCategories)
 	{
-		array_unshift($blockCategories, [
+		array_unshift(
+			$blockCategories,
+			[
 				'slug'  => 'ms_blocks',
 				'title' => __('MS Blocks', 'rgcerte'),
 				'icon'  => null,
@@ -33,6 +35,7 @@ class BlocksController
 		$this->arrayFlat($folders);
 
 		$this->registerAllBlocks();
+
 	}
 
 	public function getFolders($path)
@@ -58,6 +61,7 @@ class BlocksController
 		}
 		return $folderPaths;
 	}
+
 
 	public function arrayFlat($paths)
 	{
@@ -87,6 +91,7 @@ class BlocksController
 			}
 		}
 
+
 		foreach ($this->paths as $path) {
 			add_action("init", function () use ($path) {
 				register_block_type(
@@ -95,4 +100,5 @@ class BlocksController
 			});
 		}
 	}
+
 }

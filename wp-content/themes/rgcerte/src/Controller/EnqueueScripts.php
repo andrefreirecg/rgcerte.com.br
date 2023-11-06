@@ -17,7 +17,7 @@ class EnqueueScripts
     {
         $path = $args['path'] ?? get_stylesheet_directory();
         $path .= $args['filePath'];
-        wp_enqueue_script($args['handle'], $path, $args['dep'], filemtime($path), $args['inFooter']);
+        wp_enqueue_script($args['handle'], $path, $args['dep'], filemtime(get_stylesheet_directory().$args['filePath']), $args['inFooter']);
     }
 
     public function wpEnqueueStyle($args): void
@@ -69,11 +69,13 @@ class EnqueueScripts
         //     'inFooter' => true
         // ]);
 
-        // $this->wpEnqueueStyle([
-        //     'handle'   => 'child-theme-front-css',
-        //     'filePath' => '/dist/admin.css',
-        //     'dep'      => [],
-        // ]);
+        $parenthandle = 'parent-style';
+        $this->wpEnqueueStyle([
+            'handle'   => 'child-theme-front-admin-css',
+            'path'     => get_stylesheet_directory_uri(),
+            'filePath' => '/dist/admin.css',
+
+        ]);
     }
 
     /**
@@ -86,6 +88,7 @@ class EnqueueScripts
         $this->wpEnqueueScript([
             'handle'   => 'child-theme-js',
             'filePath' => '/dist/theme.js',
+            'path' => get_template_directory_uri(),
             'dep'      => [],
             'inFooter' => true
         ]);
@@ -95,8 +98,21 @@ class EnqueueScripts
             'filePath' => '/dist/theme.css',
             'dep'      => [],
         ]);
-
-
+        $this->wpEnqueueStyle([
+            'handle'   => 'slider-css',
+            'path'     => get_template_directory_uri(),
+            'filePath' => '/node_modules/react-alice-carousel/lib/alice-carousel.css',
+            'dep'      => [],
+        ]);
+        // $this->wpEnqueueScript([
+        //     'handle'   => 'slider-js',
+        //     'filePath' => '/node_modules/react-alice-carousel/lib/react-alice-carousel.js',
+        //     'path' => get_template_directory_uri(),
+        //     'dep'      => [],
+        //     'inFooter' => true
+        // ]);
+        // wp_enqueue_script('react-alice-carousel-js', 'http://rgcerte.com.br.loc/wp-includes/js/dist/vendor/react-dom.min.js', array(), '16.9.0', true);
+        
         $data = [
             'url_ajax' => admin_url('admin-ajax.php'),
             'nonce'    => wp_create_nonce('child-theme-nonce'),

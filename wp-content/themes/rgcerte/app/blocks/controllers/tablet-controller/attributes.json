@@ -1,0 +1,38 @@
+{
+    "attributes": {
+        "msPaddingTabletTop": {
+            "type": "text",
+            "default": 0
+          },
+          "msPaddingTabletBottom": {
+            "type": "text",
+            "default": 0
+          },
+          "msPaddingTabletLeft": {
+            "type": "text",
+            "default": 0
+          },
+          "msPaddingTabletRight": {
+            "type": "text",
+            "default": 0
+          },
+          "msMarginTabletTop": {
+            "type": "text",
+            "default": 0
+          },
+          "msMarginTabletBottom": {
+            "type": "text",
+            "default": 0
+          },
+          "msMarginTabletLeft": {
+            "type": "text",
+            "default": 0
+          },
+          "msMarginTabletRight": {
+            "type": "text",
+            "default": 0
+          }
+    }
+  
+  }
+  

@@ -1,0 +1,65 @@
+.ms-desktop-spacing{
+    @media (max-width: 2056px) {
+        @for $i from 0 through 3000 {
+            &.msdmt-#{$i} {
+              margin-top: #{$i}px;
+            }
+            &.msdmr-#{$i} {
+                margin-right: #{$i}px;
+            }
+            &.msdmb-#{$i} {
+                margin-bottom: #{$i}px;
+            }
+            &.msdml-#{$i} {
+                margin-left: #{$i}px;
+            }
+        }
+    }
+}
+.ms-tablet-spacing{
+    @media (max-width: 999px) {
+        @for $i from 0 through 3000 {
+            &.mstmt-#{$i} {
+              margin-top: #{$i}px;
+            }
+            &.mstmr-#{$i} {
+                margin-right: #{$i}px;
+            }
+            &.mstmb-#{$i} {
+                margin-bottom: #{$i}px;
+            }
+            &.mstml-#{$i} {
+                margin-left: #{$i}px;
+            }
+        }
+    }
+}
+.ms-mobile-spacing{
+    @media (max-width: 750px) {
+        @for $i from 0 through 3000 {
+            &.msmmt-#{$i} {
+              margin-top: #{$i}px;
+            }
+            &.msmmr-#{$i} {
+                margin-right: #{$i}px;
+            }
+            &.msmmb-#{$i} {
+                margin-bottom: #{$i}px;
+            }
+            &.msmml-#{$i} {
+                margin-left: #{$i}px;
+            }
+        }
+    }
+}
+
+
+.spacing-controls{
+    &:not(:first-child){
+        display: flex;
+        flex-direction: row;
+    }
+}
+.wp-block-makersolucoes-slider{
+    display: block;
+}
