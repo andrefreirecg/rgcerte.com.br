@@ -1,3 +1,10 @@
+@media (min-width: 640px) {
+  .wp-block-navigation__responsive-container.is-menu-open {
+    max-width: 50%;
+    padding-left: 1.5rem;
+  }
+}
+
 .quem-somos {
   padding: 0 1rem;
 }
