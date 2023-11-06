@@ -11,17 +11,45 @@
     "icon"
   ],
   "attributes": {
-    "key": {
+    "images": {
+      "type": "array",
+      "default": []
+    },
+    "animationDuration": {
+      "type": "number",
+      "default": 400
+    },
+    "animationType": {
+      "type": "string",
+      "default": "slide"
+    },
+    "autoPlay": {
+      "type": "boolean",
+      "default": true
+    },
+    "autoPlayInterval": {
+      "type": "number",
+      "default": 3000
+    },
+    "infinite": {
+      "type": "boolean",
+      "default": true
+    },
+    "responsiveMobile": {
+      "type": "number",
+      "default": 1
+    },
+    "responsiveTablet": {
+      "type": "number",
+      "default": 1
+    },
+    "responsiveDesktop": {
+      "type": "number",
+      "default": 1
+    },
+    "buttonsStyle": {
       "type": "string",
       "default": ""
-    },
-    "buttons": {
-      "type": "boolean",
-      "default": false
-    },
-    "styleButtons": {
-      "type": "boolean",
-      "default": false
     }
   },
   "providesContext": {

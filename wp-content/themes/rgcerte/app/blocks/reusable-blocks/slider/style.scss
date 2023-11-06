@@ -1,23 +1,37 @@
 @import "../../../variables";
-
-.ms-divider {
-    background-color: #fff;
-    position: relative;
-    margin: 15px 0;
-    display: inline-flex;
-    min-height: 5px;
-    min-width: 10px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-
-    &::before {
-        background-color: #fff;
-    }
-
-    &::after {
-        max-width: 30%;
-        position: absolute;
-        background-color: black;
+@import "react-alice-carousel/lib/scss/alice-carousel.scss";
+.ms-slider{
+    &.buttons-centered{
+        .alice-carousel{
+            &__prev-btn{
+                p{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    width: 1%;
+                    border-radius: 100%;
+                    padding: 1.2rem;
+                    background-color: rgba(255,255,255,0.75);
+                    left: 1%;
+                    top: 50%;
+                    z-index: 10000;
+                }
+            }
+            &__next-btn{
+                p{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    width: 1%;
+                    border-radius: 100%;
+                    padding: 1.2rem;
+                    background-color: rgba(255,255,255,0.75);
+                    right: 1%;
+                    top: 50%;
+                }
+            }
+        }
     }
 }
