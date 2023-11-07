@@ -1,2 +1,1 @@
-console.log('aqui');
-import 'react-alice-carousel';
+import '../../../app/blocks/reusable-blocks/accordion/functions.js'

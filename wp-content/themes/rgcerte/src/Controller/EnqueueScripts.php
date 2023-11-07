@@ -62,13 +62,26 @@ class EnqueueScripts
      */
     public function scriptsAdmin(): void
     {
-        // $this->wpEnqueueScript([
-        //     'handle'   => 'child-theme-front-js',
-        //     'filePath' => '/dist/admin.js',
-        //     'dep'      => [],
-        //     'inFooter' => true
-        // ]);
-
+        $this->wpEnqueueScript([
+            'handle'   => 'accordion-js',
+            'filePath' => '/node_modules/accordionjs/accordion.js',
+            'path'     => get_template_directory_uri(),
+            'dep'      => [],
+            'inFooter' => true
+        ]);
+        $this->wpEnqueueScript([
+            'handle'   => 'child-theme-front-js',
+            'filePath' => '/dist/admin.js',
+            'path'     => get_template_directory_uri(),
+            'dep'      => [],
+            'inFooter' => true
+        ]);
+        $this->wpEnqueueStyle([
+            'handle'   => 'accordion-css',
+            'path'     => get_template_directory_uri(),
+            'filePath' => '/node_modules/accordionjs/accordion.css',
+            'dep'      => [],
+        ]);
         $parenthandle = 'parent-style';
         $this->wpEnqueueStyle([
             'handle'   => 'child-theme-front-admin-css',
@@ -102,6 +115,12 @@ class EnqueueScripts
             'handle'   => 'slider-css',
             'path'     => get_template_directory_uri(),
             'filePath' => '/node_modules/react-alice-carousel/lib/alice-carousel.css',
+            'dep'      => [],
+        ]);
+        $this->wpEnqueueStyle([
+            'handle'   => 'accordion-css',
+            'path'     => get_template_directory_uri(),
+            'filePath' => '/node_modules/accordionjs/accordion.css',
             'dep'      => [],
         ]);
         // $this->wpEnqueueScript([
