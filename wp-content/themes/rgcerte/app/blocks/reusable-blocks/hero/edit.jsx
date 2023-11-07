@@ -1,7 +1,7 @@
 import { useBlockProps, useInnerBlocksProps } from '@wordpress/block-editor';
 import './edit.scss';
 
-export function Edit({ attributes }) {
+export function Edit() {
   const blockProps = useBlockProps({ className: 'Hero Container' });
 
   const innerBlocks = useInnerBlocksProps(

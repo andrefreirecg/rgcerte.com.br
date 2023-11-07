@@ -1,1 +1,1 @@
-console.log('Admin script - ON');
+import '../../../app/blocks/reusable-blocks/accordion/functions.js'
