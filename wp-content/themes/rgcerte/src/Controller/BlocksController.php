@@ -84,14 +84,6 @@ class BlocksController
 
 	public function registerAllBlocks()
 	{
-		if (is_admin()) {
-			global $pagenow;
-			if ('post-new.php' === $pagenow || 'post.php' === $pagenow) {
-				return;
-			}
-		}
-
-
 		foreach ($this->paths as $path) {
 			add_action("init", function () use ($path) {
 				register_block_type(
