@@ -14,6 +14,10 @@
       "type": "boolean",
       "default": false
     },
+    "linkAttribute": {
+      "type": "string",
+      "default": ""
+    },
     "maxWidth": {
       "type": "number",
       "default": null

@@ -106,7 +106,15 @@ function Inspector({
     }),
     min: 10,
     max: 100
-  })));
+  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
+    label: "link",
+    value: attributes.linkAttribute,
+    onChange: value => {
+      setAttributes({
+        linkAttribute: value
+      });
+    }
+  }));
 }
 
 /***/ }),
@@ -158,10 +166,18 @@ function Save(attributes) {
     fontSize: `font-size: var(--wp--preset--font-size--${attributes.attributes.fontSize});`,
     'max-width': maxWidth
   };
-  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  console.log(attributes.attributes);
+  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, attributes.attributes.linkAttribute ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+    href: attributes.attributes.linkAttribute,
+    target: "_blank",
+    rel: "noopener noreferrer"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     ...innerBlocks,
     style: styles
-  });
+  })) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    ...innerBlocks,
+    style: styles
+  }));
 }
 
 /***/ }),
@@ -236,7 +252,7 @@ module.exports = window["wp"]["components"];
   \****************************************************/
 /***/ (function(module) {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"version":"1.0.0","name":"makersolucoes/card","title":"Card","category":"ms_blocks","description":"Exibe uma card com estilo principal","keywords":["card"],"attributes":{"preview":{"type":"boolean","default":false},"maxWidth":{"type":"number","default":null},"checked":{"type":"boolean","default":false}},"providesContext":{"contextLabelChecked":"checked"},"supports":{"html":false,"spacing":{"margin":true,"padding":true},"color":{"text":true,"background":true,"gradients":true}},"textdomain":"boilerplate","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"version":"1.0.0","name":"makersolucoes/card","title":"Card","category":"ms_blocks","description":"Exibe uma card com estilo principal","keywords":["card"],"attributes":{"preview":{"type":"boolean","default":false},"linkAttribute":{"type":"string","default":""},"maxWidth":{"type":"number","default":null},"checked":{"type":"boolean","default":false}},"providesContext":{"contextLabelChecked":"checked"},"supports":{"html":false,"spacing":{"margin":true,"padding":true},"color":{"text":true,"background":true,"gradients":true}},"textdomain":"boilerplate","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ })
 

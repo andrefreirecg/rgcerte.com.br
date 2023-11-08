@@ -1,6 +1,6 @@
 import { InspectorControls } from '@wordpress/block-editor';
 import {
-  PanelBody, RangeControl
+  PanelBody, RangeControl, TextControl
 } from '@wordpress/components';
 
 export function Inspector({ attributes, setAttributes }) {
@@ -18,6 +18,11 @@ export function Inspector({ attributes, setAttributes }) {
           max={100}
         />
       </PanelBody>
+      <TextControl
+        label="link"
+        value={attributes.linkAttribute}
+        onChange={(value) => {setAttributes({ linkAttribute: value })}}
+    />
     </InspectorControls>
   );
 }
