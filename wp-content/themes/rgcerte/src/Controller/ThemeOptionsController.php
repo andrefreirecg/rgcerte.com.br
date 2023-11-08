@@ -46,7 +46,6 @@ $labels = array(
     'search_items' => 'Pesquisar por Membro',
     'not_found' => 'Nenhum membro encontrado',
     'not_found_in_trash' => 'Nenhum membro encontrado na lixeira',
-    'supports' => array('title', 'editor', 'thumbnail', 'excerpt'),
   );
   
   // Define as configurações do custom post type
@@ -55,7 +54,7 @@ $labels = array(
     'show_in_rest' => true,
     'public' => true,
     'has_archive' => true,
-    'supports' => array('title', 'editor', 'thumbnail'),
+    'supports' => array('title', 'editor', 'thumbnail','excerpt'),
   );
   
   // Registra o custom post type
