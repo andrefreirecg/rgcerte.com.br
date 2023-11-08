@@ -46,6 +46,7 @@ $labels = array(
     'search_items' => 'Pesquisar por Membro',
     'not_found' => 'Nenhum membro encontrado',
     'not_found_in_trash' => 'Nenhum membro encontrado na lixeira',
+    'supports' => array('title', 'editor', 'thumbnail', 'excerpt'),
   );
   
   // Define as configurações do custom post type
