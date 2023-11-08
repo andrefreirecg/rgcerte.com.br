@@ -82,7 +82,6 @@ $labels = array(
     'supports' => array('title', 'editor', 'thumbnail'),
   );
   register_post_type('Depoimentos', $args);
- 
 
         /**
          * Add support for Block Styles.

@@ -39,4 +39,5 @@ node_modules
 # Theme
 !/wp-content/themes/rgcerte
 !/wp-content/themes/rgcerte/*
+!/wp-content/plugins/ms-curso/*
 # Plugins
