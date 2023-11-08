@@ -19,10 +19,21 @@ function registrar_tipo_de_postagem_personalizado() {
         'show_in_rest' => true,
         'public' => true,
         'has_archive' => true,
-        'supports' => array('title', 'editor', 'thumbnail'),
+        'supports' => array('title', 'editor', 'thumbnail', 'taxonomies' => array('categorias')),
     );
 
     register_post_type('cursos', $args);
+    
+    register_taxonomy(
+        'categorias',
+        'cursos',
+        array(
+            'label' => 'Categorias',
+            'rewrite' => array('slug' => 'categoria'),
+            'hierarchical' => true,
+        )
+    );
+
     $labels = array(
         'name' => 'Aulas',
         'position' => 3,
