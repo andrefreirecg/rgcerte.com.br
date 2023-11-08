@@ -20,9 +20,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function Edit({
-  attributes
-}) {
+function Edit() {
   const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)({
     className: 'Hero Container'
   });

@@ -54,7 +54,7 @@ $labels = array(
     'show_in_rest' => true,
     'public' => true,
     'has_archive' => true,
-    'supports' => array('title', 'editor', 'thumbnail'),
+    'supports' => array('title', 'editor', 'thumbnail','excerpt'),
   );
   
   // Registra o custom post type
@@ -82,7 +82,6 @@ $labels = array(
     'supports' => array('title', 'editor', 'thumbnail'),
   );
   register_post_type('Depoimentos', $args);
- 
 
         /**
          * Add support for Block Styles.

@@ -1,1 +1,1 @@
-console.log('aqui');
+import '../../../app/blocks/reusable-blocks/accordion/functions.js'

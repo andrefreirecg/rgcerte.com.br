@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "version": "1.0.0",
+  "name": "makersolucoes/accordion",
+  "title": "Acordeon",
+  "category": "ms_blocks",
+  "description": "Exibe um componente de Accordion",
+  "icon": "align-center",
+  "keywords": [
+    "icon"
+  ],
+  "attributes": {},
+  "providesContext": {
+    "contextLabelChecked": "checked"
+  },
+  "supports": {
+    "html": false,
+    "alignWide": false,
+    "color": {
+      "text": false,
+      "background": false,
+      "gradients": false
+    },
+    "width": false
+  },
+  "textdomain": "boilerplate",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

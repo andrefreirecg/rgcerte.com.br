@@ -1,0 +1,1 @@
+{"version":3,"file":"reusable-blocks/slider/index.css","mappings":";;;AACI;EACI;EACA;AAAR,C","sources":["webpack://rgcerte/./app/blocks/reusable-blocks/slider/edit.scss"],"sourcesContent":[".ms-inspector-slider{\n    h3{\n        display: inline-flex;\n        align-items: center;\n    }\n}\n"],"names":[],"sourceRoot":""}

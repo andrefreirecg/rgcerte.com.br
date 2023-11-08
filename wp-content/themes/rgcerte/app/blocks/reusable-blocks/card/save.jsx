@@ -29,6 +29,16 @@ export function Save(attributes) {
     fontSize: `font-size: var(--wp--preset--font-size--${attributes.attributes.fontSize});`,
     'max-width': maxWidth
   };
-  
-  return <div {...innerBlocks} style={styles} />;
+  console.log(attributes.attributes)
+  return (
+    <>
+      {attributes.attributes.linkAttribute ? (
+        <a href={attributes.attributes.linkAttribute} target="_blank" rel="noopener noreferrer">
+          <div {...innerBlocks} style={styles} />
+        </a>
+      ) : (
+        <div {...innerBlocks} style={styles} />
+      )}
+    </>
+  );
 }
