@@ -19,7 +19,8 @@ function registrar_tipo_de_postagem_personalizado() {
         'show_in_rest' => true,
         'public' => true,
         'has_archive' => true,
-        'supports' => array('title', 'editor', 'thumbnail', 'taxonomies' => array('categorias')),
+        'taxonomies' => true,
+        'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'taxonomies'),
     );
 
     register_post_type('cursos', $args);
@@ -31,6 +32,8 @@ function registrar_tipo_de_postagem_personalizado() {
             'label' => 'Categorias',
             'rewrite' => array('slug' => 'categoria'),
             'hierarchical' => true,
+            'show_in_rest' => true,
+            'show_admin_column' => true,
         )
     );
 
